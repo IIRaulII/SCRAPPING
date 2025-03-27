@@ -1,0 +1,33 @@
+{
+  "name": "paginas-amarillas-scraper",
+  "version": "1.0.0",
+  "description": "Web scraping genérico para extraer información de negocios en Páginas Amarillas",
+  "main": "index_paginas_amarillas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "node index_paginas_amarillas.js",
+    "scrape:bares": "node run-search.js config.js",
+    "scrape:restaurantes": "node run-search.js config-restaurantes-madrid.js",
+    "search": "node run-search.js",
+    "test-server": "node test/server.js"
+  },
+  "keywords": [
+    "puppeteer",
+    "web-scraping",
+    "nodejs",
+    "automation",
+    "paginas-amarillas",
+    "scraper",
+    "directorio",
+    "negocios"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "puppeteer": "^24.4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
